@@ -5,18 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link href = "https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css" rel = "stylesheet">
     <title>Document</title>
 </head>
 <body>
     <header>
         <div class="top-header">
             <div class="searchbar">
-                <img src="" alt="magGlass">
+                <img src="./images/magnify.svg" alt="avatar1" class="magnify">
                 <input type="text">
             </div>
             <div class="user-info">
-                <img src="" alt="bell-notif">
-                <img src="" alt="profile-pic">
+                <img src="./images/bell.svg" alt="bell-notif" class="bell">
+                <img src="./images/avatar1.png" alt="profile-pic" class="avatar1 avatar">
                 <span>Morgan Oakley</span>
             </div>
         </div>
@@ -24,9 +25,13 @@
         <div class="bottom-header">
             
             <div class='welcome'>
-                <img src="" alt="profile-pic-big">
-                <span>Hi, there,</span>
-                <h5>Morgan Oakley (@morgan)</h5>
+                <div class="welcome-avatar">
+                    <img src="./images/avatar1.png" alt="profile-pic" class="avatar1 avatar">
+                </div>
+                <div class="welcome-text">
+                    <span>Hi, there,</span>
+                    <h5>Morgan Oakley (@morgan)</h5>
+                </div>
             </div>
             
 
@@ -41,24 +46,51 @@
 
     <div class="sidebar">
         <div class="logo-group">
-            <img src="" alt="logo">
+            <img src="./images/logo.svg" alt="logo" class="logo">
             <span>Dashboard</span>
         </div>
         <div class="main-nav">
             <ul>
-                <li>Home</li>
-                <li>Profile</li>
-                <li>Messages</li>
-                <li>History</li>
-                <li>Tasks</li>
-                <li>Communities</li>
+                <li>
+                    <img src="images/home.png" alt="" class="nav-img">
+                    <span>Home</span>
+                </li>
+                <li>
+                    <img src="images/profile.png" alt="" class="nav-img">
+                    <span>Profile</span>
+                </li>
+                <li>
+                    <img src="images/message.png" alt="" class="nav-img">
+                    <span>Messages</span>
+                </li>
+                <li>
+                    <img src="images/history.png" alt="" class="nav-img">
+                    <span>History</span>
+                </li>
+                <li>
+                    <img src="images/tasks.png" alt="" class="nav-img">
+                    <span>Tasks</span>
+                </li>
+                <li>
+                    <img src="images/communities.png" alt="" class="nav-img">
+                    <span>Communities</span>
+                </li>
             </ul>
         </div>
         <div class="alt-nav">
             <ul>
-                <li>Settings</li>
-                <li>Support</li>
-                <li>Privacy</li>
+                <li>
+                    <img src="images/settings.png" alt="" class="nav-img">
+                    <span>Settings</span>
+                </li>
+                <li>
+                    <img src="images/privacy.png" alt="" class="nav-img">
+                    <span>Privacy</span>
+                </li>
+                <li>
+                    <img src="images/support.png" alt="" class="nav-img">
+                    <span>Support</span>
+                </li>
             </ul>
         </div>    
     </div>
@@ -69,12 +101,75 @@
                 <h5 >Your Projects</h5>
             </div>
             <div class="cards-container">
-                <div class="card">hi</div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Super Cool Project</h3>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptatem odit, voluptatibus dolores non dolorum.</span>
+                    </div>
+                    <div class="card-buttons">
+                        <img src="./images/star.svg" alt="fav" class="star">
+                        <img src="./images/eye.svg" alt="search" class="eye">
+                        <img src="./images/share.svg" alt="search" class="share">
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Less Cool Project</h3>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptatem odit, voluptatibus dolores non dolorum. Lorem ipsum dolor sit amet consectetur.</span>
+                    </div>
+                    <div class="card-buttons">
+                        <img src="./images/star.svg" alt="fav" class="star">
+                        <img src="./images/eye.svg" alt="search" class="eye">
+                        <img src="./images/share.svg" alt="search" class="share">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Impossible App</h3>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias is dolores non dolorum. Lorem ipsum dolor sit amet consectetur.</span>
+                    </div>
+                    <div class="card-buttons">
+                        <img src="./images/star.svg" alt="fav" class="star">
+                        <img src="./images/eye.svg" alt="search" class="eye">
+                        <img src="./images/share.svg" alt="search" class="share">
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3>East Peast App</h3>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptatem odit, voluptatibus dolores non dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                    </div>
+                    <div class="card-buttons">
+                        <img src="./images/star.svg" alt="fav" class="star">
+                        <img src="./images/eye.svg" alt="search" class="eye">
+                        <img src="./images/share.svg" alt="search" class="share">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Ad Blocker</h3>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptatem odit, voluptatibus.</span>
+                    </div>
+                    <div class="card-buttons">
+                        <img src="./images/star.svg" alt="fav" class="star">
+                        <img src="./images/eye.svg" alt="search" class="eye">
+                        <img src="./images/share.svg" alt="search" class="share">
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Money Maker</h3>
+                        <span>adipisicing elit. Molestias voluptatem odit, voluptatibus dolores non dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique consequuntur voluptatem fugiat.</span>
+                    </div>
+                    <div class="card-buttons">
+                        <img src="./images/star.svg" alt="fav" class="star">
+                        <img src="./images/eye.svg" alt="search" class="eye">
+                        <img src="./images/share.svg" alt="search" class="share">
+                    </div>
+                </div>
             </div>
         </div>
         <div class="content-right">
@@ -105,7 +200,7 @@
             <div class="trending">
                 <div class="user">
                     <div class="pp">
-                        <img src="" alt="userpp">
+                        <img src="images/trend-img_4.jpg" alt="userpp" class="trend-pp">
                     </div>
                     <div>
                         <h6>@tegan</h6>
@@ -114,7 +209,7 @@
                 </div>
                 <div class="user">
                     <div class="pp">
-                        <img src="" alt="userpp">
+                        <img src="images/trend-img_1.jpg" alt="userpp" class="trend-pp">
                     </div>
                     <div>
                         <h6>@tegan</h6>
@@ -123,7 +218,7 @@
                 </div>
                 <div class="user">
                     <div class="pp">
-                        <img src="" alt="userpp">
+                        <img src="images/trend-img_2.jpg" alt="userpp" class="trend-pp">
                     </div>
                     <div>
                         <h6>@tegan</h6>
@@ -132,7 +227,7 @@
                 </div>
                 <div class="user">
                     <div class="pp">
-                        <img src="" alt="userpp">
+                        <img src="images/trend-img_3.jpg" alt="userpp" class="trend-pp">
                     </div>
                     <div>
                         <h6>@tegan</h6>
